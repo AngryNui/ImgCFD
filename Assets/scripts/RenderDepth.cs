@@ -1,5 +1,7 @@
 ﻿ using UnityEngine;
- 
+
+//source:https://answers.unity.com/questions/877170/render-scene-depth-to-a-texture.html
+
  [ExecuteInEditMode]
  public class RenderDepth : MonoBehaviour
  {
