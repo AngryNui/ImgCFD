@@ -30,19 +30,6 @@
  
      private void Start ()
      {
-         if (!SystemInfo.supportsImageEffects)
-         {
-             print("System doesn't support image effects");
-             enabled = false;
-             return;
-         }
-         if (shader == null || !shader.isSupported)
-         {
-             enabled = false;
-             print("Shader " + shader.name + " is not supported");
-             return;
-         }
- 
          // turn on depth rendering for the camera so that the shader can access it via _CameraDepthTexture
          GetComponent<Camera>().depthTextureMode = DepthTextureMode.Depth;
      }
